@@ -5,7 +5,7 @@ import com.yazilimbilimi.springexceptionhandling.dto.CreateEmployeeDto;
 
 public interface EmployeeService {
 
-    Employee findById(int productId);
+    Employee findById(int employeeId);
 
     Employee add(CreateEmployeeDto createEmployeeDto);
 

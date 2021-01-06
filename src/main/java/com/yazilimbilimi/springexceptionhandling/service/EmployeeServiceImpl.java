@@ -17,9 +17,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeRepository employeeRepository;
 
     @Override
-    public Employee findById(int productId) {
-        Employee employee =  employeeRepository.findById(productId)
-               .orElseThrow(() -> new EntityNotFoundException("Employee Not Found with id : " + productId));
+    public Employee findById(int employeeId) {
+        Employee employee =  employeeRepository.findById(employeeId)
+               .orElseThrow(() -> new EntityNotFoundException("Employee Not Found with id : " + employeeId));
         return employee;
     }
 
